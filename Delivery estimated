@@ -6,7 +6,7 @@
 {% if product.available %}
     <div id="delivery-date-estimator" class="delivery-estimate instock-pulse">
      <span class="icon--pulsing"></span>
-    <p> Tu pedido llegaría entre <span id="earliest-day"> </span> y <span id="latest-day"> </span>  </p>
+    <p> Your order will arrive<span id="earliest-day"> </span> & <span id="latest-day"> </span>  </p>
      </div>
 {% endif %}
 
