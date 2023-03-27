@@ -24,3 +24,8 @@ select the custom liquid and type {% render 'estimated delivery' %}
 
 
 If you want to change the values of the days, just change the numbers 3 and 6 to your estimated delivery days.
+
+<script>
+  document.getElementById("earliest-day").innerHTML = dayjs().add(3, 'days').format("MMM D");
+  document.getElementById("latest-day").innerHTML = dayjs().add(6, 'days').format("MMM D");
+</script>
