@@ -3,13 +3,11 @@
 {% endcomment %}
 <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.7/dayjs.min.js"></script>
 
-
-
 {% if product.available %}
-                        <div id="delivery-date-estimator" class="delivery-estimate instock-pulse">
-                          <span class="icon--pulsing"></span>
-                          <p> Tu pedido llegaría entre <span id="earliest-day"> </span> y <span id="latest-day"> </span>  </p>
-                        </div>
+    <div id="delivery-date-estimator" class="delivery-estimate instock-pulse">
+     <span class="icon--pulsing"></span>
+    <p> Tu pedido llegaría entre <span id="earliest-day"> </span> y <span id="latest-day"> </span>  </p>
+     </div>
 {% endif %}
 
 
