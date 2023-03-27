@@ -21,3 +21,6 @@ Go to customize your Shopify code and then go to the product page
 
 --------------------- STEP 7 --------------------------
 select the custom liquid and type {% render 'estimated delivery' %}
+
+
+If you want to change the values of the days, just change the numbers 3 and 6 to your estimated delivery days.
