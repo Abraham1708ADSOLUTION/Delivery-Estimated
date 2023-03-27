@@ -1,0 +1,70 @@
+{% comment %}
+    The script
+{% endcomment %}
+<script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.7/dayjs.min.js"></script>
+
+
+
+{% if product.available %}
+                        <div id="delivery-date-estimator" class="delivery-estimate instock-pulse">
+                          <span class="icon--pulsing"></span>
+                          <p> Tu pedido llegaría entre <span id="earliest-day"> </span> y <span id="latest-day"> </span>  </p>
+                        </div>
+{% endif %}
+
+
+
+
+<script>
+  document.getElementById("earliest-day").innerHTML = dayjs().add(3, 'days').format("MMM D");
+  document.getElementById("latest-day").innerHTML = dayjs().add(6, 'days').format("MMM D");
+</script>
+
+{% comment %}
+    CSS
+{% endcomment %}
+
+<style>
+
+.instock-pulse {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon--pulsing {
+  position: relative;
+  width: 13px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.icon--pulsing:after, 
+.icon--pulsing:before {
+    background: #54c63a;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "";
+    margin: 5px;
+}
+
+@keyframes inventory-pulse{
+  0%{
+    opacity:0.5;
+  }
+  to{
+    transform:scale(2.5);
+    opacity:0;
+  }
+}
+
+.icon--pulsing:before {
+    animation: inventory-pulse 2s linear infinite;
+}
+
+</style>
