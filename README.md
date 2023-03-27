@@ -32,6 +32,8 @@ Go to perzonalize your shopify code , and then go to the product page
 
 
 --------------------- STEP 7 --------------------------
+
+
 select the custom liquid ant whire {% render 'delivery-estimated' %}
 
 
