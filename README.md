@@ -1,51 +1,23 @@
-# Delivery-Estimated
+# Estimated Delivery
 --------------------- STEP 1 --------------------------
-
-
-Open the file in this repository with the name "delivery-estimated.liquid"
+Open the file in this repository with the name "estimated-delivery.liquid"
 
 --------------------- STEP 2 --------------------------
-
-
-Copy all code than apparen in the file 
+Copy all the code that appears in the file
 
 
 --------------------- STEP 3 --------------------------
+Open your Shopify code editor
 
-
-Open your shopify code editor 
-
---------------------- STEP 4 --------------------------
-
-
-Create a new file with the name "delivery-estimated.liquid"
+--------------------- STAGE 4 --------------------------
+Create a new file with the name "estimated-delivery.liquid"
 
 --------------------- STEP 5 --------------------------
-
-
-paste the all code than previously you copied
+paste all the code you copied before
 
 --------------------- STEP 6 --------------------------
-
-
-Go to perzonalize your shopify code , and then go to the product page 
+Go to customize your Shopify code and then go to the product page
 
 
 --------------------- STEP 7 --------------------------
-
-
-select the custom liquid ant whire {% render 'delivery-estimated' %}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+select the custom liquid and type {% render 'estimated delivery' %}
